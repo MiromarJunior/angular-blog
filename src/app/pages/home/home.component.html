@@ -1,18 +1,35 @@
-<header>
-  <app-menu-bar></app-menu-bar>
-</header>
+
 
 
 <app-menu-title></app-menu-title>
+<button [routerLink]="['/content']"  > Content</button>
 <div class="container__articles">
 
   <div class="articles__main">
-    <app-big-card></app-big-card>
+    <app-big-card
+[id]="'1'"
+    photoCover="https://s1.mmommorpg.com/media/wide/One-Piece-2-Pirate-King.jpg"
+      cardTitle="Novo Episódio Lançado"
+      cardDescription=" One Piece 2 é um MMO de aventura para navegadores. O jogo permite a criação de uma tripulação de piratas perigosos para sair em expedições arriscadas com o personagem Luffy. O objetivo final? Tornar-se o Rei Pirata."></app-big-card>
   </div>
   <div class="articles__others">
-    <app-small-card></app-small-card>
-    <app-small-card></app-small-card>
-    <app-small-card></app-small-card>
+    <app-small-card
+    [id]="'2'"
+    [photoCover]="'https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2018/12/onepiece-destacada.jpg?fit=774%2C489&ssl=1'"
+    [cardTitle]="'Episódios Iniciais'">
+  </app-small-card>
+
+    <app-small-card
+    [id]="'3'"
+      photoCover="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrpmwlty63oo-BxRmwK0BfZbSflLE37J3v8td5E6ky49wvF0tJYg1V3QndA7iY16XA-HU&usqp=CAU"
+      cardTitle="Novo Episódio Lançado">
+    </app-small-card>
+
+    <app-small-card
+    [id]="'4'"
+    [photoCover]="'https://allzone.com.br/wp-content/uploads/2023/04/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Design-sem-nome-1-1024x576.png'"
+    [cardTitle]="'Último episódio'"
+    ></app-small-card>
   </div>
 
 </div>

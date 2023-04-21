@@ -8,6 +8,8 @@ import { MenuTitleComponent } from './component/menu-title/menu-title.component'
 import { SmallCardComponent } from './component/small-card/small-card.component';
 import { BigCardComponent } from './component/big-card/big-card.component';
 import { HomeComponent } from './pages/home/home.component';
+import { FormsModule } from '@angular/forms';
+import { ContentComponent } from './page/content/content.component';
 
 
 @NgModule({
@@ -18,11 +20,12 @@ import { HomeComponent } from './pages/home/home.component';
     SmallCardComponent,
     BigCardComponent,
     HomeComponent,
+    ContentComponent,
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

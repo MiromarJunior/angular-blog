@@ -2,12 +2,12 @@
 
   <div class="container__small-card-content">
   <div class="small-card__photo">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrpmwlty63oo-BxRmwK0BfZbSflLE37J3v8td5E6ky49wvF0tJYg1V3QndA7iY16XA-HU&usqp=CAU" alt="cartoes">
+    <img src="{{photoCover}}" alt="cartoes">
 
   </div>
   <div class="small-card__title">
     <h1>
-    <a href="#">Novo Episódio Lançado</a>
+    <a [routerLink]="['content',id]">{{cardTitle}}</a>
     </h1>
 
   </div>

@@ -1,5 +1,5 @@
 .container__big-card{
-  
+
   max-width: 400px;
   height: 500px;
   display: flex;
@@ -14,7 +14,7 @@
   margin-top: 15px;
   font-size: 20px;
 }
-.big-card__description p{
+.big-card__description p a{
   margin-top: 15px;
   color: gray;
 }
